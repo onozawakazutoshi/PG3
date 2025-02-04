@@ -1,23 +1,20 @@
-template <typename T1,typename T2>
-#include <stdio.h>
-class Box{
-public:
-	T1 x;
-	T2 y;
-	Box(T1 x, T2 y) :x(x), y(y){}
-
-	T1 Min() {
-		if (x < y) {
-			return x;
-		}
-		else {
-			return y;
-		}
-	}
-
-};
+#include "Enemy.h"
+#include "Boss.h"
 int main() {
-	Box<int, int> b1(10, 20);
-	printf("Min:%d", b1.Min());
+
+	Enemy* enemy[3];
+	for (int i = 0;i < 2;i++) {
+		if (i < 1)
+			enemy[i] = new Enemy;
+		else
+			enemy[i] = new Boss;
+	}
+	for (int i = 0;i < 2;i++) {
+		enemy[i]->Attack();
+	}
+	for (int i = 0;i < 2;i++) {
+		delete enemy[i];
+	}
+	
 	return 0;
 }

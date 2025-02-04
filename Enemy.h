@@ -3,13 +3,17 @@
 #include <stdlib.h>
 #include<stdio.h>
 
+
 class Enemy
 {
 public:
+	//Enemy();
+	//~Enemy();
 	void Initializ();
 	void Move();
-	void Atack();
+	virtual void Attack();
 	void Remove();
+	void Load();
 
 };
 

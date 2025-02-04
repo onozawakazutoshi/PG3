@@ -5,7 +5,7 @@ void Enemy::Move()
 	printf("Ú‹ß\n");
 }
 
-void Enemy::Atack()
+void Enemy::Attack()
 {
 	printf("UŒ‚’†\n");
 }
@@ -13,4 +13,8 @@ void Enemy::Atack()
 void Enemy::Remove()
 {
 	printf("—£’E’†\n");
+}
+
+void Enemy::Load()
+{
 }
