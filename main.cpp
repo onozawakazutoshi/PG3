@@ -1,20 +1,25 @@
-#include "Enemy.h"
-#include "Boss.h"
-int main() {
+#include <stdio.h>
+#include "IShape.h"
+#include "Circle.h"
+#include "Rectangle.h"
 
-	Enemy* enemy[3];
-	for (int i = 0;i < 2;i++) {
-		if (i < 1)
-			enemy[i] = new Enemy;
-		else
-			enemy[i] = new Boss;
-	}
-	for (int i = 0;i < 2;i++) {
-		enemy[i]->Attack();
-	}
-	for (int i = 0;i < 2;i++) {
-		delete enemy[i];
-	}
-	
+int main(void) {
+
+	IShape* shape[2];
+
+	shape[0] = new Circle;
+	shape[1] = new Rectangle;
+
+	printf("円の半径:4\n短形の底辺:2\n短形の高さ:3\n");
+
+	for (int i = 0; i < 2; i++)
+		shape[i]->Size();
+
+
+	printf("\n");
+
+	for (int i = 0; i < 2; i++)
+		shape[i]->Draw();
+
 	return 0;
 }
