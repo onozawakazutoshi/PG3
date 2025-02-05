@@ -127,6 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Downloads\PG3_0401\ClearScene.cpp" />
+    <ClCompile Include="..\..\..\Downloads\PG3_0401\GameManager.cpp" />
+    <ClCompile Include="..\..\..\Downloads\PG3_0401\IScene.cpp" />
+    <ClCompile Include="..\..\..\Downloads\PG3_0401\main.cpp" />
+    <ClCompile Include="..\..\..\Downloads\PG3_0401\StageScene.cpp" />
+    <ClCompile Include="..\..\..\Downloads\PG3_0401\TitleScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +140,13 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="..\..\..\Downloads\PG3_03_02.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Downloads\PG3_0401\ClearScene.h" />
+    <ClInclude Include="..\..\..\Downloads\PG3_0401\GameManager.h" />
+    <ClInclude Include="..\..\..\Downloads\PG3_0401\IScene.h" />
+    <ClInclude Include="..\..\..\Downloads\PG3_0401\StageScene.h" />
+    <ClInclude Include="..\..\..\Downloads\PG3_0401\TitleScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
