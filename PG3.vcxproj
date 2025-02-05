@@ -127,20 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Boss.cpp" />
-    <ClCompile Include="CharSet.cpp" />
-    <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Boss.h" />
-    <ClInclude Include="CharSet.h" />
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="IShape.h" />
-    <ClInclude Include="Rectangle.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
