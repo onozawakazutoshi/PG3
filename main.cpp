@@ -2,15 +2,18 @@
 #include "IShape.h"
 #include "Circle.h"
 #include "Rectangle.h"
+#include "CharSet.h"
 
 int main(void) {
-
+	CharSet::SetConsoleOutputToUTF8();
 	IShape* shape[2];
+
+	
 
 	shape[0] = new Circle;
 	shape[1] = new Rectangle;
 
-	printf("円の半径:4\n短形の底辺:2\n短形の高さ:3\n");
+	printf("radius = 4\nbottom = 2\nheight = 3\n");
 
 	for (int i = 0; i < 2; i++)
 		shape[i]->Size();
