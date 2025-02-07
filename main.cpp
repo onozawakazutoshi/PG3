@@ -1,23 +1,23 @@
-template <typename T1,typename T2>
-#include <stdio.h>
-class Box{
-public:
-	T1 x;
-	T2 y;
-	Box(T1 x, T2 y) :x(x), y(y){}
+#include <iostream>
+#include <thread>
 
-	T1 Min() {
-		if (x < y) {
-			return x;
-		}
-		else {
-			return y;
-		}
-	}
+using namespace std;
 
-};
+void PrintThread(uint32_t num) {
+
+	cout << "thread" << num << endl;
+}
+
 int main() {
-	Box<int, int> b1(10, 20);
-	printf("Min:%d", b1.Min());
+
+	// マルチスレッドではある
+	thread t1(PrintThread, 1);
+	t1.join();
+	thread t2(PrintThread, 2);
+	t2.join();
+	thread t3(PrintThread, 3);
+	t3.join();
+
 	return 0;
+
 }
